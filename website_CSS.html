@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 陳彥愷的個人作品集</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --bs-primary: #710dfd; /* Bootstrap Primary Color */
+            --bs-body-bg: #ffffff; /* 背景色 */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bs-body-bg);
+            color: #333; /* 標準文字顏色 */
+        }
+        /* 調整 Navbar 連結和 Hero 區塊的樣式 */
+        .navbar-brand, .nav-link {
+            font-weight: 600;
+        }
+        .hero-section {
+            padding: 8rem 0; /* 加大高度，讓 Hero 區塊更突出 */
+            background-color: var(--bs-primary);
+            color: white;
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+        /* 作品集卡片風格 */
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#home">陳彥愷的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">專案/作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#others">其他</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">
+                大家好，我是陳彥愷
+            </h1>
+            <p class="lead mb-4">
+                熱衷於學習人工智慧 和 C++ 程式設計，在各種課程中發掘自己的興趣。
+            </p>
+            <a href="#projects" class="btn btn-light btn-lg fw-bold px-4">
+                探索我的作品
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">🚀 關於我</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src=""C:\Users\516\Desktop\彥愷\陳彥愷.JPG class="img-fluid rounded-circle shadow-lg" alt="個人頭像" style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+                <div class="col-lg-8">
+                    <p class="fs-5">
+                        **陳彥愷**
+                    </p>
+                    <p>
+                        我是目前就讀於國立台北教育大學，我主要使用**C++** 和 **JavaScript**。這個學期，我特別專研於使用 **HTML** 來快速建構網站。
+                    </p>
+                    <p>
+                        我也熱愛運動、音樂，希望能多元學習與發展。。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">💡 專案 / 作品集</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=Project+1+Image" class="card-img-top" alt="作品一截圖">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 fw-bold">本學期期末專案：響應式購物網站</h3>
+                            <p class="card-text text-muted">
+                                使用 Bootstrap 5 的 Grid System 和 Components 實現，涵蓋產品列表、購物車等功能，確保全裝置相容性。
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" target="_blank" class="btn btn-outline-primary btn-sm me-2">線上預覽</a>
+                            <a href="#" target="_blank" class="btn btn-outline-secondary btn-sm">GitHub Repo</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=Project+2+Image" class="card-img-top" alt="作品二截圖">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 fw-bold">Bootstrap 語義化練習：個人部落格</h3>
+                            <p class="card-text text-muted">
+                                強調 HTML5 語義標籤的使用 (e.g., `<article>`, `<aside>`)，並運用 Sass 變數客製化 Bootstrap 主題色。
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" target="_blank" class="btn btn-outline-primary btn-sm me-2">線上預覽</a>
+                            <a href="#" target="_blank" class="btn btn-outline-secondary btn-sm">GitHub Repo</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=Project+3+Image" class="card-img-top" alt="作品三截圖">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 fw-bold">JavaScript 小工具：待辦事項清單</h3>
+                            <p class="card-text text-muted">
+                                結合 Bootstrap 5 介面與原生 JavaScript DOM 操作，實現新增、刪除、標記完成的互動功能。
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" target="_blank" class="btn btn-outline-primary btn-sm me-2">線上預覽</a>
+                            <a href="#" target="_blank" class="btn btn-outline-secondary btn-sm">GitHub Repo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-lg">想看更多的話，請與我聯繫！</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="others" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">📚 其他：學習心得與技能</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4 fw-bold text-primary">核心技術與技能</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">**前端框架/工具：** Bootstrap 5, RWD/Mobile First 設計</li>
+                                <li class="list-group-item">**標記語言：** HTML5 (語意化標籤)</li>
+                                <li class="list-group-item">**樣式語言：** CSS3, Flexbox, Grid, Sass/SCSS</li>
+                                <li class="list-group-item">**程式語言：** JavaScript (ES6+)</li>
+                                <li class="list-group-item">**版本控制：** Git / GitHub Pages</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4 fw-bold text-primary">學習心得分享</h3>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">「學習 Bootstrap 5 最大的收穫是理解了『行動裝置優先』的設計思維。這不僅是技術應用，更是一種設計哲學。」</p>
+                                <footer class="blockquote-footer mt-2">
+                                    陳彥愷的學習筆記
+                                </footer>
+                            </blockquote>
+                            <p>
+                                我發現語意化標籤如 `main`, `header`, `section`, `article` 的使用，對網站的 SEO 和可讀性至關重要。未來計畫深入學習 React 或 Vue 等現代框架。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">📧 聯絡我</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center lead mb-4">
+                        歡迎透過以下方式與我聯繫，期待與您交流前端技術或討論合作機會。
+                    </p>
+                    <ul class="list-group list-group-flush text-center">
+                        <li class="list-group-item fs-5">
+                            <span class="fw-bold">電子郵件：1071835@gmail.com</span>
+                            <a href="mailto:your.email@example.com" class="text-primary text-decoration-none"></a>
+                        </li>
+                        <li class="list-group-item fs-5">
+                            <span class="fw-bold">GitHub：https://111316013.github.io/website_CSS/</span>
+                            <a href="https://github.com/yourusername" target="_blank" class="text-primary text-decoration-none"></a>
+                        </li>
+                    </ul>
+
+                    <h4 class="text-center mt-5 mb-3">發送訊息</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">陳彥愷</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">bruce1071835@gmail.com</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">訊息內容</label>
+                            <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">送出訊息</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">
+                &copy; <span id="currentYear"></span> 陳彥愷的個人作品集 | 基於 Bootstrap 5 開發
+            </p>
+            <p class="small">
+                本網站符合 HTML5 語意化與 RWD 響應式標準。
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
